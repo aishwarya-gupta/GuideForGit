@@ -67,4 +67,8 @@ MOVE AND RENAME FILE -
 	- git mv oldFileName FolderName/newFileName  ::: move a file from oldFileName to newFileName in this Folder
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 DIRECTLY COMMIT FROM WORKING DIRECTORY TO REPOSITORY WITHOUT ADDING TO STAGING AREA -
-	git commit -am "message"
+	git commit -am "message"  :::  commits every file in working directory(beware!!)  ::: use when small modifications are only done
+----------------------------------------------------------------------------------------------------------------------------------------------------
+UNDO CHANGES TO WORKING DIRECTORY / CHECKOUT PREVIOUSLY COMMITTED COPY FROM REPOSITORY -
+	git checkout -- fileName  :::  --<space>filename  ::: there is a space between -- and fileName
+----------------------------------------------------------------------------------------------------------------------------------------------------
