@@ -1,0 +1,68 @@
+git --version   :::  find git version
+----------------------------------------------------------------------------------------------------------------------------------------------------
+git config --global user.name "Aishwarya Gupta"  :::  git configuration of this user(global) whose username is Aishwarya Gupta
+
+git config --global user.email "agupta@broadsoft.com"  :::  git configuration of this user(global) whose email is agupta@broadsoft.com
+----------------------------------------------------------------------------------------------------------------------------------------------------
+git config --list  :::  list all git configurations / settings
+
+git config user.email  :::  display user email
+----------------------------------------------------------------------------------------------------------------------------------------------------
+clear  :::  clear screen
+----------------------------------------------------------------------------------------------------------------------------------------------------
+git help  :::  help about git topics
+
+git help commit  :::  opens related documents
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Starting a GIT project -
+	a. go to the folder/repository path. Eg - C:\Users\agupta\Desktop\GIT
+	b. git init  :::  initialize this folder(GIT) as repository i.e make this folder as Git repository
+		i. GIT folder will become "master"
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Commit - 
+	a. put a file in GIT(master) folder. Eg. first.txt
+	b. git add .  :::  add all changes we made to project(.)   :::  add to staging area
+	c. git commit -m "message"  :::  message can be "This is my first commit/any commit message"  :::  commit is used to save a copy of project
+
+View Commit History -
+	a. git log  :::  display commit history(commit id , author, date, commit message)
+
+View Filtered Commit History - 
+	a. git log --author="Aishwarya"
+----------------------------------------------------------------------------------------------------------------------------------------------------
+git status  :::  check if copy at remote repository and working directory(local repository) is synced/having same stuff
+----------------------------------------------------------------------------------------------------------------------------------------------------
+GIT WORK FLOW -
+	working directory > (git add filename) > staging area > (git commit -m "message") > repository
+----------------------------------------------------------------------------------------------------------------------------------------------------
+EDIT A FILE - 
+	git add file  :::  add file to staging area
+	git commit -m "message"  :::  commit the file. Now remote repository will have the new file with new changes
+----------------------------------------------------------------------------------------------------------------------------------------------------
+VIEWING CHANGES MADE TO WORKING DIRECTORY FILE & COMPARE WITH REPOSITORY - 
+	git diff  :::  show new changes made in the working directory file
+			+  :::  new changes added
+			-  :::  things removed from earlier thing
+----------------------------------------------------------------------------------------------------------------------------------------------------
+VIEWING CHANGES MADE TO STAGING AREA & COMPARE WITH REPOSITORY - 
+	git diff --staged  :::  show new changes made in the working directory file
+			+  :::  new changes added
+			-  :::  things removed from earlier thing
+----------------------------------------------------------------------------------------------------------------------------------------------------
+HOW TO DELETE FILE -
+	git rm filename  :::  remove file from Working directory as well as Repository
+	git commit -m "message"  :::  to confirm deletion action  :::  important if we want to revert our deletion action at later point of time
+----------------------------------------------------------------------------------------------------------------------------------------------------
+MOVE AND RENAME FILE - 
+	- rename a file. Eg. change First.txt to Home.txt
+	- git add Home.txt
+	- git rm First.txt
+	- git status
+	- git commit -m "message"
+
+(OR)
+	- git mv oldFileName newFileName  :::  move a file from oldFileName to newFileName  :::  rename from oldFileName to newFileName
+(or)
+	- git mv oldFileName FolderName/newFileName  ::: move a file from oldFileName to newFileName in this Folder
+----------------------------------------------------------------------------------------------------------------------------------------------------

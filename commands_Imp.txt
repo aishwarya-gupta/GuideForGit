@@ -1,0 +1,2 @@
+unzip ~/downloads/initializr-verekia-4.0.zip
+rm -rf <filename>

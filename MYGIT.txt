@@ -1,0 +1,52 @@
+1. 2 types of GIT -
+	a. Centralized version control system (CVCS).
+	b. Distributed/Decentralized version control system (DVCS).
+
+2. Centralized version control system (CVCS)
+	a. Advantage
+		i. central server to store all files
+	b. Disadvantage
+		i. single point of failure (at central server)
+
+3. Distributed version control system (DVCS)
+	a. Advantage
+		i. unlike CVCS, no fear of center failing
+		ii. Many operations can be performed Offline
+		iii. Commit changes, create branches, view logs, etc. in Offline mode
+		iv. Online mode is needed only to commit latest changes and checkout the new changes
+		v. Chances of losing data is rare as there are multiple copies
+
+4. Working directory - directory where files are checked out. In CVCS, commit is done directly to central repository. In DVCS, when
+commit is done, GIT looks for file in "Staging area". Files present in Staging area are committed and not all modified files.
+
+5. Git Repository <- (Git commit operation) <- Staging Area <- (Git add operation) <- Working Directory
+=> make changes in working directory
+=> add changes(specific or all changes) made in working directory to staging area
+=> only those changes added in staging area can be committed to the Git repository
+
+6. In GIT, files are not addressed by names. Everything is content-addressed
+
+7. (commit1) <- (commit2) <- (commit3)
+=> commits follow linked list structure. Each commit represents node of linked list
+
+8. To view commit history, use parent pointer
+
+9. If a commit has multiple parents, then it means that the earlier commits were 2 branches
+
+10. Branch - used to work on a new feature. Once the new feature is completed, it is merged with main branch and then this branch is
+deleted
+
+11. A HEAD in a branch points to the latest commit in the branch. Whenever a commit is done, the HEAD points to the latest commit.
+Head is stored in ".git/refs/heads" directory
+
+12. Clone - check out the instance of the repository. It also checks the working directory
+
+13. Pull - copy changes from remote repository to local
+
+14. Push - copy changes from local to remote repository. Same as commit
+
+15. Revision - version of source code. It is represented by commits
+
+16. URL - location of Git repository
+
+17.
