@@ -72,3 +72,9 @@ DIRECTLY COMMIT FROM WORKING DIRECTORY TO REPOSITORY WITHOUT ADDING TO STAGING A
 UNDO CHANGES TO WORKING DIRECTORY / CHECKOUT PREVIOUSLY COMMITTED COPY FROM REPOSITORY -
 	git checkout -- fileName  :::  --<space>filename  ::: there is a space between -- and fileName
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+VIEW ALL COMMITS / VIEW LOG
+	git log
+	ZZ  :::  to come out of logs
+----------------------------------------------------------------------------------------------------------------------------------------------------
+UNSTAGE FILES -
+	git reset HEAD fileName
