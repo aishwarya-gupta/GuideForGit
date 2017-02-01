@@ -66,3 +66,5 @@ MOVE AND RENAME FILE -
 (or)
 	- git mv oldFileName FolderName/newFileName  ::: move a file from oldFileName to newFileName in this Folder
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+DIRECTLY COMMIT FROM WORKING DIRECTORY TO REPOSITORY WITHOUT ADDING TO STAGING AREA -
+	git commit -am "message"
