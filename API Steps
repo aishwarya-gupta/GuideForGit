@@ -1,0 +1,19 @@
+convertTOOCIRequest steps -
+  1. parameter - AbstractRequestbean <requestBean>
+  2. return type - Request
+  2. body -
+      a. RequestBean bean = (RequestBean) requestBean;
+      b. Request request = Request.Factory.newInstance();
+      c. bean.getParam1()
+      d. request.setParam1(bean.getParam1());
+      e. return request;
+
+ConvertFromOCIResponse steps -
+  1. parameter - ociResponse
+  2. return type - ResponseBean
+  3. body - 
+      a. Response response = (Response) ociResponse;
+      b. ResponseBean bean = new ResponseBean();
+      c. response.getParam1()
+      d. bean.setParam1(response.getParam1());
+      e. return bean;
